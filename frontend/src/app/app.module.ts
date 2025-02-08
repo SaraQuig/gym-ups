@@ -20,7 +20,6 @@ import { ListProdComponent } from './components/list-prod/list-prod.component';
 import { ModalComponent } from './components/modal/modal.component';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +33,7 @@ import { ModalComponent } from './components/modal/modal.component';
     VerProdComponent,
     ListProdComponent,
     ModalComponent
+
   ],
   imports: [
     BrowserModule,

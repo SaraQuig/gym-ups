@@ -1,72 +1,49 @@
 <app-navbar></app-navbar>
 
-  <div class="container_">
+<div class="container_">
     <div class="cont1">
-      <img src="../../../assets/img/markettienda.jpg" alt="Market Tienda" />
-      <img src="../../../assets/img/t2.jpg" alt="T2" />
+      <img src="../../../assets/img/gym.png" alt="Market Tienda" />
     </div>
     <div class="cont2">
-      <button
-        type="button"
-        routerLink="/listar-usuarios"
-        class="btn btn-warning"
-      >
-        GESTIÓN DE USUARIOS
-      </button>
-      <button
-        type="button"
-        routerLink="/ver-prod"
-        class="btn btn-warning"
-      >
-        CATÁLOGO DE PRODUCTOS
-      </button>
-      <button
-        type="button"
-        routerLink="/list-prod"
-        class="btn btn-warning"
-      >
-        GESTIÓN DE COMPRA/VENTA
-      </button>
-      <button
-        type="button"
-        routerLink="/ver-prod"
-        class="btn btn-warning"
-      >
-        GESTIONAR PROVEEDORES
-      </button>
-    </div>
-  </div>
+      <!-- seccion de anuncios -->
+      <div class="x">
+        <div class="row_">
+            <!-- Columna para la lista de productos -->
+            <div class="col-lg-10">
+                <div class="card card-lista">
+                    <div class="card-body text-center">
+                        <span class="titulo">LISTADO DE ANUNCIOS</span>
+                        <button class="btn btn-success float-start" routerLink="/ingresar-prod">NUEVO</button>
+                        <table *ngIf="listProductos.length > 0" class="table table-striped mt-3">
+                            <thead>
+                              <tr>
+                                <th scope="col">Anuncio</th>
 
-  <!-- Footer -->
-  <footer class="container-fluid py-5 texto">
-    <div class="floatbox">
-      <div class="item">
-        <div class="content">
-          <img src="../../../assets/img/iconos/candado.png" alt="candado" />
-          <p>Pagos 100% seguros</p>
-        </div>
-      </div>
-      <div class="item">
-        <div class="content">
-          <img src="../../../assets/img/iconos/entrega.png" alt="candado" />
-          <p>
-            Encuentranos en Quito. Estamos ubicados en San José de Morán
-          </p>
-        </div>
-      </div>
-      <div class="item">
-        <div class="content">
-          <img src="../../../assets/img/iconos/estrellas.png" alt="candado" />
-          <p>Productos de calidad</p>
-        </div>
-      </div>
-      <div class="item">
-        <div class="content">
-          <p>Operamos con</p>
-          <a href="https://www.paypal.com/ec/signin">
-            <img src="../../../assets/img/iconos/paypal.png" alt="candado" />
-          </a>
-        </div>
-      </div>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr *ngFor="let producto of listProductos">
+                                <td>{{ producto.nombre }}</td>
+
+                                <td>
+                                    <i (click)="eliminarProducto(producto._id)" class="fas fa-trash text-danger"></i>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <h5 style="text-align: start; margin-top: 10px;" *ngIf="listProductos.length == 0">No hay anuncios para mostrar</h5>
+                    </div>
+                </div>
+            </div>
     </div>
-  </footer>
+</div>
+
+
+
+
+
+
+
+
+
+

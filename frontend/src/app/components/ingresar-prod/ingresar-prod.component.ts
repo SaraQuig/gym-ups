@@ -15,7 +15,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class IngresarProdComponent implements OnInit {
   productoForm: FormGroup;
-  titulo = 'Crear producto';
+  titulo = 'Crear Anuncio';
   id: string | null;
   constructor(private fb: FormBuilder,
               private router: Router,

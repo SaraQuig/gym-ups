@@ -2,46 +2,43 @@
 <div class="container_">
     <div class="row justify-content-center">
         <!-- Columna para el formulario -->
-        <div class="col-lg-6">
+        <div class="col-lg-7">
             <div class="card card-formulario">
                 <div class="card-body text-center">
                     <span class="titulo"> {{ titulo | uppercase }}</span>
                     <form class="mt-3" [formGroup]="productoForm" (ngSubmit)="agregarProducto()">
                         <div class="mb-3">
-                            <input type="text" formControlName="producto" class="form-control form-control-lg" placeholder="Producto">
+                            <input type="text" formControlName="producto" class="form-control form-control-lg" placeholder="Anuncio">
                             <div class="text-danger" *ngIf="productoForm.get('producto')?.hasError('required') && productoForm.get('producto')?.touched">
-                                <span>El nombre del producto <strong>es obligatorio</strong></span>
+                                <span>El nombre del anuncio <strong>es obligatorio</strong></span>
                             </div>
                         </div>
                         <div class="mb-3">
-                            <input type="text" formControlName="categoria" class="form-control form-control-lg" placeholder="Categoria">
+                            <input type="text" formControlName="categoria" class="form-control form-control-lg" placeholder="Nombre de la persona que registra">
                             <div class="text-danger" *ngIf="productoForm.get('categoria')?.hasError('required') && productoForm.get('categoria')?.touched">
-                                <span>La categoria <strong>es obligatoria</strong></span>
+                                <span>El nombre <strong>es obligatorio</strong></span>
                             </div>
                         </div>
                         <div class="mb-3">
-                            <input type="text" formControlName="ubicacion" class="form-control form-control-lg" placeholder="Ubicacion">
+                            <input type="text" formControlName="ubicacion" class="form-control form-control-lg" placeholder="Hora de registro">
                             <div class="text-danger" *ngIf="productoForm.get('ubicacion')?.hasError('required') && productoForm.get('ubicacion')?.touched">
-                                <span>La ubicacion <strong>es obligatoria</strong></span>
+                                <span>La hora <strong>es obligatoria</strong></span>
                             </div>
                         </div>
                         <div class="mb-3">
-                            <input type="number" formControlName="precio" class="form-control form-control-lg" placeholder="Precio">
+                            <input type="number" formControlName="precio" class="form-control form-control-lg" placeholder="Ingrese 0">
                             <div class="text-danger" *ngIf="productoForm.get('precio')?.hasError('required') && productoForm.get('precio')?.touched">
-                                <span>El precio <strong>es obligatorio</strong></span>
+                                <span>La cantidad<strong>es obligatorio</strong></span>
                             </div>
                         </div>
                         <div class="mb-3">
-                            <button routerLink="/ver-prod" class="btn btn-secondary btn-lg float-start">VOLVER</button>
+                            <button routerLink="/admin-menu" class="btn btn-secondary btn-lg float-start">VOLVER</button>
                             <button type="submit" [disabled]="productoForm.invalid" class="btn btn-success btn-lg float-end">ACEPTAR</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-        <!-- Columna para la imagen -->
-        <div class="col-lg-6 d-none d-lg-block p-0 img_">
-            <img src="../../../assets/img/prod.jpg" alt="Imagen" class="img-fluid h-100 w-100">
-        </div>
+
     </div>
 </div>

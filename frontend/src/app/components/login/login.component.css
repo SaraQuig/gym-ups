@@ -1,7 +1,7 @@
 .wrapper {
-  background: #0B486B;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #F56217, #0B486B);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #F56217, #0B486B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #8E0E00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   display: flex;
   justify-content: center;
@@ -49,25 +49,25 @@ background: linear-gradient(to right, #F56217, #0B486B); /* W3C, IE 10+/ Edge, F
 .menu {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 10px 10px;
-  height: 60px;
+  height: auto;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
   display: flex;
   align-items: center;
+  color: white;
+
 }
 
 .logo img {
-  margin-right: 10px;
+  margin-right: 1.2rem;
 }
 
 .logo a {
@@ -88,7 +88,7 @@ background: linear-gradient(to right, #F56217, #0B486B); /* W3C, IE 10+/ Edge, F
 }
 
 .menu img {
-  width: 50px;
+  width: 200px; 
 }
 
 .body {

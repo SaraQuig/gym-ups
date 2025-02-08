@@ -190,3 +190,11 @@
 
 }
 
+/*fOOTER*/
+.footer {
+  background-color: #212121; /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 20px; /* Padding para separar el texto del borde */
+  text-align: center; /* Alinea el texto al centro */
+  font-family: 'Raleway', sans-serif; /* Fuente */
+}

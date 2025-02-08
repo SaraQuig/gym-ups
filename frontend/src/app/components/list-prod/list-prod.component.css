@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Encabezado */
+/* Ajustes para el header */
+.menu {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between;
+    padding: 10px 10px; /* Espaciado alrededor del contenido */
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+    background-color: white; /* O el color de fondo que prefieras */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra para mejor visibilidad */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+  }
+  
+  .logo img {
+    margin-right: 10px; /* Espaciado entre la imagen y el texto */
+  }
+  .logo a{
+    font-weight: bold;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+  }
+  
+  .nav-link {
+    margin-left: 15px; /* Espaciado entre los enlaces */
+  }
+  .menu a{
+    color: black;
+  }
+  .menu img{
+    width: 50px;
+  }
+  
+  
+  /* fin de encabezado */
+  
+  
+
+.carousel-container {
+    margin-bottom: 30px;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.carousel-caption h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.lista .card {
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.lista .card-body {
+    padding: 20px;
+}
+
+.lista .titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.lista table {
+    margin-top: 20px;
+}
+
+.lista .productos-carrito {
+    margin-top: 20px;
+}
+
+.lista .productos-carrito ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista .productos-carrito ul li {
+    margin-bottom: 10px;
+}
+
+.lista .productos-carrito button {
+    margin-left: 10px;
+}
+
+.lista .alert {
+    margin-top: 20px;
+}
+
+
+
+
+
+/*diseño de footer*/
+.floatbox {
+    display: block;
+    box-sizing: border-box;
+    margin: 0px -2.5px;
+  }
+  
+  .floatbox::after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+  
+  .item {
+    float: left;
+    box-sizing: border-box;
+    width: 25%;
+    margin-bottom: 0px;
+    padding: 0px 2.5px;
+  }
+  
+  .item:nth-child(4n + 1) {
+    clear: both;
+  }
+  
+  .content {
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+}
+

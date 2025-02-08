@@ -1,0 +1,97 @@
+.container_ {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    font-family: 'DM Serif Display', serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont1 img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.cont2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #0B486B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F56217, #0B486B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F56217, #0B486B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.cont2 button {
+    width: 80%;
+    height: 70px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.boton {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.container_ p {
+    padding: 25px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/*diseño de footer*/
+.floatbox {
+    display: block;
+    box-sizing: border-box;
+    margin: 0px -2.5px;
+}
+
+.floatbox::after {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+.item {
+    float: left;
+    box-sizing: border-box;
+    width: 25%;
+    margin-bottom: 0px;
+    padding: 0px 2.5px;
+}
+
+.item:nth-child(4n + 1) {
+    clear: both;
+}
+
+.content {
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.texto p {
+    color: black;
+}

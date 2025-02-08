@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display&display=swap');
+
+/* Encabezado */
+/* Ajustes para el header */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centra verticalmente */
+  background: transparent; /* Fondo transparente */
+  height: 100px; /* Ajusta la altura según sea necesario */
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10; /* Asegura que el logo esté por encima de otros elementos */
+  padding: 0 20px; /* Añade padding para separar los elementos del borde */
+}
+
+.center-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 300px; /* Ajusta el tamaño del logo según sea necesario */
+  height: auto;
+}
+
+.menu-items {
+  display: flex;
+  align-items: left;
+}
+
+.menu-item {
+  background: rgba(255, 255, 255, 0.5); /* Fondo blanco transparente 50% */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Padding para el botón */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cursor de puntero */
+  border-radius: 6px; /* Bordes redondeados */
+  font-family: 'Raleway', sans-serif; /* Fuente */
+  color: white;
+}
+.menu a{
+  color: black;
+}
+
+/* fin de encabezado */
+
+/*Inicio de parte de en medio*/
+.full-page-image {
+  width: 100%;
+  height: 100vh; /* 100% de la altura de la ventana */
+  object-fit: cover; /* Asegura que la imagen cubra todo el contenedor */
+}
+
+/*Diseño para la frase motivacional de la imagen*/
+.overlay {
+  position: absolute;
+  top: 15rem;
+  left: 50PX;
+  width: 1000px;
+  height: 100%;
+  display: flex;
+  align-items: flex-start; /* Alinea verticalmente al inicio */
+  justify-content: flex-start; /* Alinea horizontalmente a la izquierda */
+  padding: 20px; /* Padding para separar la frase del borde */
+  z-index: 20; /* Asegura que la frase esté por encima de la imagen */
+}
+
+.frase-principal {
+  color: white; /* Color del texto */
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 20px; /* Padding para el texto */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.frase-principal h1{
+  font-size: 5rem; /* Tamaño de fuente */
+
+}
+
+.frase-principal p {
+  font-family: 'Montserrat', sans-serif; /* Fuente diferente para el párrafo */
+  font-size: 1.2rem; /* Tamaño de fuente para el párrafo */
+}
+/*termina diseño de la frase motivacional*/
+
+.container-fluid_ {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    color: transparent;
+    position: relative;
+    z-index: 1;
+    padding: 0; /* Elimina el padding del contenedor */
+    margin: 0; 
+}
+
+.container-fluid_ img{
+    width: 100%;
+    height: 750px;
+}
+
+
+
+/* Estilos para el nuevo div con 3 secciones */
+.three-sections {
+  display: flex;
+  justify-content: space-around; /* Espacio entre las secciones */
+  padding: 20px;
+  background-color: #f8f9fa; /* Color de fondo */
+}
+
+.section {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+
+.inner-div {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif; /* Fuente diferente para el párrafo */
+}
+
+.inner-div h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.image-container {
+  padding: 1rem;
+}
+
+.rounded-image {
+  border-radius: 50px; /* Asegúrate de que el valor sea adecuado */
+  max-width: 100%;
+  height: auto;
+}
+/* Estilos para el nuevo div con 3 secciones */
+.three-sections {
+  display: flex;
+  justify-content: space-around; /* Espacio entre las secciones */
+  padding: 20px;
+  background-color: #212121; /* Color de fondo */
+}
+/*diseño de footer*/
+.floatbox {
+    display: block;
+    box-sizing: border-box;
+    margin: 0px -2.5px;
+  }
+  
+  .floatbox::after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+  
+  .item {
+    float: left;
+    box-sizing: border-box;
+    width: 25%;
+    margin-bottom: 0px;
+    padding: 0px 2.5px;
+  }
+  
+  .item:nth-child(4n + 1) {
+    clear: both;
+  }
+  
+  .content {
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+  }
+
+.tipo-letra{
+  font-family: 'Montserrat', sans-serif; /* Fuente diferente para el párrafo */
+
+}
+

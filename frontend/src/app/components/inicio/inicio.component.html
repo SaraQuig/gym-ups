@@ -1,0 +1,103 @@
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+</style>
+
+<div class="menu">
+  <div class="menu-items">
+    <button routerLink="/login" class="menu-item">Desarrolladores</button>
+  </div>
+      <img src="../../../assets/img/LOGO-final.png" alt="Logo marketpro" class="center-logo">
+        
+</div>
+
+<!-- Fin de encabezado  -->
+
+
+<div class="container-fluid_">
+  <div class="overlay">
+    <div class="frase-principal">
+      <h1>LA DISCIPLINA TE LLEVARA A LUGARES   <br>
+          DONDE LA MOTIVACIÓN NO LLEGA</h1>
+      <p>Ofrecemos información en tiempo real sobre los horarios y anuncios de cierre temporal del gimnasio universitario sede Quito-Sur.</p>
+    </div>
+  </div>
+  <img src="../../../assets/img/imagen1-fondoinicio.jpg" alt="imagen1" class="full-page-image">
+</div>
+
+
+<!-- Nuevo div con 3 secciones -->
+<div class="three-sections">
+  <div class="section">
+    <div class="inner-div">
+      <h2>Personal Training</h2>
+      <p>El éxito no se logra solo con fuerza física, sino con perseverancia y determinación en cada entrenamiento.</p>
+    </div>
+    <div class="row lista mt-5">
+      <div class="col-lg-8 offset-lg-2">
+          <div class="card">
+              <div class="card-body text-center  tipo-letra">
+                  <span class="titulo">HORARIOS DE ATENCIÓN</span>
+    
+                  <table *ngIf="listProductos.length >  0" class="table table-hover table-dark mt-3">
+                      <thead>
+                          <tr>
+                              <th scope="col">Hora</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr *ngFor="let producto of listProductos">
+                              <td>{{ producto.nombre }}</td>
+                              
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="image-container">
+      <img src="../../../assets/img/entrenador2.jpg" alt="Imagen 2" class="rounded-image">
+    </div>
+  </div>
+  <div class="section">
+    <div class="image-container">
+      <img src="../../../assets/img/entrenador.jpg" alt="Imagen 3" class="rounded-image">
+    </div>
+    
+  </div>
+</div>
+
+<!-- footer -->
+<footer class="container-fluid  text-bg-dark py-5">
+  <div class="floatbox">
+    <div class="item">
+      <div class="content">
+        <img src="../../../assets/img/iconos/candado.png" alt="candado">
+        <p>Pagos 100% seguros</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="content">
+        <img src="../../../assets/img/iconos/entrega.png" alt="candado">
+        <p>Encuentranos en Quito. Estamos ubicados en San José de Morán</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="content">
+        <img src="../../../assets/img/iconos/estrellas.png" alt="candado">
+        <p>Productos de calidad</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="content">
+        <p>Operamos con </p>
+        <a href="https://www.paypal.com/ec/signin">
+          <img src="../../../assets/img/iconos/paypal.png"  alt="candado">
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+

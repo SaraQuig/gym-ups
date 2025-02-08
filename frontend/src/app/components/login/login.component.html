@@ -1,0 +1,77 @@
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+</style>
+
+<div class="menu">
+  <nav class="navbar navbar-expand-sm navbar-dark">
+    <div class="logo">
+      <img src="../../../assets/img/LOGO-MARKETPRO.png" alt="Logo marketpro">
+      <a class="navbar-brand" href="#">MARKETPRO</a>  
+    </div>  
+    <div class="left-links">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/list-prod">VER PRODUCTOS</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div class="wrapper">
+  <div class="login-container">
+    <div class="login-form">
+      <h1>Bienvenido</h1>
+      <hr>
+      <br>
+      <div class="form-floating">
+        <span>Correo electrónico</span>
+        <input type="email" [(ngModel)]="email" class="form-control" placeholder="name@ups.edu.ec">
+      </div>
+      <br>
+      <div class="form-floating">
+        <span>Contraseña</span>
+        <input type="password" [(ngModel)]="psw" class="form-control" placeholder="Ingresa tu contraseña">
+      </div>
+      <br><br>
+      <div class="d-grid gap-2">
+        <button type="button" class="btn btn-warning" (click)="logearse()">Aceptar</button>
+      </div>
+    </div>
+    <div class="login-image">
+      <img src="../../../assets/img/tiend.jpg" alt="Imagen al lado del login">
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+<footer class="container-fluid py-5">
+  <div class="floatbox">
+    <div class="item">
+      <div class="content">
+        <img src="../../../assets/img/iconos/candado.png" alt="candado">
+        <p>Pagos 100% seguros</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="content">
+        <img src="../../../assets/img/iconos/entrega.png" alt="candado">
+        <p>Encuentranos en Quito. Estamos ubicados en San José de Morán</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="content">
+        <img src="../../../assets/img/iconos/estrellas.png" alt="candado">
+        <p>Productos de calidad</p>
+      </div>
+    </div>
+    <div class="item">
+      <div class="content">
+        <p>Operamos con </p>
+        <a href="https://www.paypal.com/ec/signin">
+          <img src="../../../assets/img/iconos/paypal.png" alt="candado">
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

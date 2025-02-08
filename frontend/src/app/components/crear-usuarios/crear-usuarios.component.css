@@ -1,0 +1,55 @@
+.text-danger {
+    text-align: start;
+    margin-left: 7px;
+}
+
+.wrapper {
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh; /* Ajusta la altura para ocupar toda la pantalla */
+}
+
+.img-fluid {
+    object-fit: cover;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente para la tarjeta */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra ligera para la tarjeta */
+    border: none;
+    border-radius: 8px;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0B486B;
+}
+
+.form-control {
+    border-radius: 8px;
+}
+
+.form-control::placeholder {
+    color: #ccc;
+}
+
+.btn-lg {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 8px;
+}
+
+.float-start {
+    margin-right: 1rem;
+}
+
+.cont{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+}

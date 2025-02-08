@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+/* Encabezado */
+/* Ajustes para el header */
+.menu {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: space-between;
+    padding: 10px 10px; /* Espaciado alrededor del contenido */
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+    background-color: white; /* O el color de fondo que prefieras */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra para mejor visibilidad */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+  }
+  
+  .logo img {
+    margin-right: 10px; /* Espaciado entre la imagen y el texto */
+  }
+  .logo a{
+    font-weight: bold;
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+  }
+  
+  .nav-link {
+    margin-left: 15px; /* Espaciado entre los enlaces */
+  }
+  .menu a{
+    color: black;
+  }
+  .menu img{
+    width: 50px;
+  }
+  
+  
+  /* fin de encabezado */
+.container-fluid a{
+    font-family: 'Abril Fatface', serif;
+    font-size: 70px;
+    padding-left: 20px;
+}

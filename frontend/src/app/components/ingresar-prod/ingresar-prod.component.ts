@@ -46,7 +46,7 @@ export class IngresarProdComponent implements OnInit {
 
     console.log(PRODUCTO);
     this._productoService.guardarProducto(PRODUCTO).subscribe(data => {
-      this.toastr.success('El producto fue registrado con exito!', 'Producto Registrado!');
+      this.toastr.success('El anuncio fue registrado con exito!', 'Anuncio Registrado!');
       //this.router.navigate(['/']);
     }, error => {
       console.log(error);

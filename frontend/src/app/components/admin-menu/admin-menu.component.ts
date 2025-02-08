@@ -34,7 +34,7 @@ export class AdminMenuComponent implements OnInit  {
 
   eliminarProducto(id: any) {
     this._productoService.eliminarProducto(id).subscribe(data => {
-      this.toastr.error('El producto fue eliminado con exito' ,'Producto Eliminado');
+      this.toastr.error('El anuncio fue eliminado con exito' ,'Anuncio Eliminado');
       this.obtenerProductos();
     }, error => {
       console.log(error);
